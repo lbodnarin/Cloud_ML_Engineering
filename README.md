@@ -48,7 +48,7 @@
       * **DASHBOARD**
   * **t3_copy_from**:
     * En caso de no existir, carga los renglones del archivo: %YYYY.csv en la tabla: CSV_%YYYY:
-      * **s3://mybucket/.CSV/%YYYY.csv** en la tabla: **CSV_%YYYY**
+      * **s3://mybucket/.CSV/%YYYY.csv** > **CSV_%YYYY**
   * **t4_outlier_detection**:
     * Identifica por cada aeropuerto si hubo algún día con demoras y cantidad de vuelos fuera de lo normal.
     * En caso de no existir, carga la data sumarizada en la tabla: **DASHBOARD** indicando por fila si la observación pertenece a la misma distribución que las observaciones existentes (inlier; INLIER=1), o debe considerarse como diferente (outlier; INLIER=0).
