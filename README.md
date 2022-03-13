@@ -36,7 +36,7 @@
 ![QuickSight_Dashboard.png](images/QuickSight_Dashboard.png)
 
 **DAG de Airflow**:
-* **DAG Run**:
+* **Dag Run**:
   * ~4Min por año
 * **Tasks**:
   * **t1_create_database:**
@@ -47,7 +47,7 @@
       * **CSV_%YYYY**
       * **DASHBOARD**
   * **t3_copy_from**:
-    * En caso de no existir, carga los renglones del archivo %YYYY.csv en la tabla CSV_%YYYY**:
+    * En caso de no existir, carga los renglones del archivo: %YYYY.csv en la tabla: CSV_%YYYY:
       * **s3://mybucket/.CSV/%YYYY.csv** en la tabla: **CSV_%YYYY**
   * **t4_outlier_detection**:
     * Identifica por cada aeropuerto si hubo algún día con demoras y cantidad de vuelos fuera de lo normal.
