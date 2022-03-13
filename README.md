@@ -85,7 +85,8 @@
 * Crear 1 internet gateway y asociarlo a la VPC_10.0.0.0/16.
 
 **Route Tables**:
-* Asociar las 2 subnets con la route table de la VPC_10.0.0.0/16 y agregar la siguiente ruta: Destination: 0.0.0.0/0 | Target: Internet Gateway.
+* Asociar las 2 subnets con la route table de la VPC_10.0.0.0/16 y agregar la siguiente ruta:
+  * Destination: 0.0.0.0/0 | Target: Internet Gateway.
 
 **Security Groups**:
 * Crear 4 security groups en la VPC_10.0.0.0/16:
